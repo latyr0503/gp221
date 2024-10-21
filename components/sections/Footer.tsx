@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex justify-center items-center">
           <Image src={logo} alt="Logo" width={150} height={150} />
         </div>
-        <div className="sm:justify-evenly flex gap-10 sm:py-5">
+        <div className="sm:justify-between flex gap-10 sm:py-5">
           <div>
             <h3 className="text-red-800">Sama GP</h3>
             <ul>
@@ -30,7 +30,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="sm:justify-evenly flex gap-10 sm:py-5">
+        <div className="sm:justify-between flex gap-10 sm:py-5">
           <div>
             <h3 className="text-red-800">Livraison</h3>
             <ul>
