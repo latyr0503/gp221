@@ -7,7 +7,7 @@ import { BsWhatsapp } from "react-icons/bs";
 export default function Footer() {
   return (
     <div className="mt-5 p-10 border-t-2 border-green-800">
-      <div className="flex sm:flex-col justify-between border-b-2 border-green-800 p-10">
+      <div className="flex sm:flex-col justify-between border-b-2 border-green-800 p-10 sm:p-3">
         <div className="flex justify-center items-center">
           <Image src={logo} alt="Logo" width={150} height={150} />
         </div>
