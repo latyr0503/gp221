@@ -83,7 +83,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed flex justify-between items-center w-[100vw] py-3 px-10 py-4 shadow-lg ${
+      className={`fixed flex justify-between items-center w-[100vw] px-10 py-4 shadow-lg z-10 ${
         colorChange ? "bg-white" : "bg-green-800 text-white"
       }`}
     >
@@ -173,9 +173,14 @@ export default function Navbar() {
         </NavigationMenu>
 
         <div className="flex gap-4">
-          <Link href="/">
-            <MdOutlineAirplanemodeActive className=" w-9 h-9" />
-          </Link>
+          <div className="relative">
+            <Link href="/">
+              <MdOutlineAirplanemodeActive className=" w-8 h-8" />
+            </Link>
+            <div className="bg-red-800 text-white rounded-full w-5 h-5 flex justify-center items-center absolute -top-2 left-5 font-bold text-sm">
+              0
+            </div>
+          </div>
           <Link href="/">
             <FaRegUser className=" w-8 h-8" />
           </Link>
@@ -192,7 +197,9 @@ export default function Navbar() {
             <Link href="/">
               <MdOutlineAirplanemodeActive className=" w-8 h-8" />
             </Link>
-            <div className="bg-red-800 text-white rounded-full w-5 h-5 flex justify-center items-center absolute -top-2 left-5 font-bold text-sm">0</div>
+            <div className="bg-red-800 text-white rounded-full w-5 h-5 flex justify-center items-center absolute -top-2 left-5 font-bold text-sm">
+              0
+            </div>
           </div>
           <Link href="/">
             <FaRegUser className=" w-7 h-7" />
