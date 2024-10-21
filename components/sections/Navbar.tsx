@@ -189,7 +189,7 @@ export default function Navbar() {
 
       <div className="lg:hidden sm:flex justify-center items-center  ">
         <div
-          className={`flex gap-4 mr-8 ${
+          className={`flex gap-4 mr-5 ${
             colorChange ? "text-yellow-500 " : " text-white"
           }`}
         >
