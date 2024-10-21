@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="hero_section">
       <div className="overlay">
         <div>
-          <h1 className="text-green-800 text-9xl sm:text-3xl font-bold">GP 221</h1>
+          <h1 className="text-green-800 text-8xl sm:text-5xl font-bold">GP 221</h1>
           <p className="font-semibold text-2xl py-5">Votre colis, notre mission, partout au Sénégal</p>
           <button className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-md group">
             <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-red-800 rounded group-hover:-mr-4 group-hover:-mt-4">
