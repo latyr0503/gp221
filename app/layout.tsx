@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Quicksand } from "@next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/sections/Navbar";
+import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
   title: "GP221",
@@ -21,7 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <Navbar />
+        </header>
+        <main className="py-12">{children}</main>
+        <footer>
+          <Footer />
+        </footer>
+      </body>
     </html>
   );
 }

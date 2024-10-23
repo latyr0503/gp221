@@ -8,8 +8,7 @@ export default function Newsletter() {
         <p className="sm:text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui
           soluta sed, facere, animi, quisquam tempore ut ea quibusdam voluptates
-          architecto nesciunt maxime iure officia laborum? Debitis ab corrupti
-          soluta quod, ratione quibusdam qui ipsam provident?
+          architecto nesciunt maxime iure officia laborum?
         </p>
       </div>
       <div className="relative rounded-full bg-white shadow-xl w-1/3 h-16 sm:w-full sm:mt-10">

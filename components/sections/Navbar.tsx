@@ -23,6 +23,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import photoUser from "@/assets/freepik__candid-image-photography-natural-textures-highly-r__6473.png";
 import Link from "next/link";
 
 const components: { title: string; href: string; description: string }[] = [
@@ -118,28 +119,37 @@ export default function Navbar() {
                   <li className="row-span-3">
                     <NavigationMenuLink asChild>
                       <a
-                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        className="flex h-full w-full select-none flex-col justify-center px-6 no-underline outline-none focus:shadow-md"
                         href="/"
                       >
-                        <div className="mb-2 mt-4 text-lg font-medium">
-                          shadcn/ui
-                        </div>
-                        <p className="text-sm leading-tight text-muted-foreground">
-                          Beautifully designed components that you can copy and
-                          paste into your apps. Accessible. Customizable. Open
-                          Source.
-                        </p>
+                        <img
+                          src={photoUser.src}
+                          className="w-full h-48 object-cover rounded-lg"
+                          alt="photoUser"
+                        />
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <Link href="/" title="Introduction">
-                    Re-usable components built using Radix UI and Tailwind CSS.
+                  <Link
+                    className="border-b-4 text-xl font-bold border-green-800"
+                    href="/"
+                    title="arriver"
+                  >
+                    Arrivée{" "}
                   </Link>
-                  <Link href="/" title="Installation">
-                    How to install dependencies and structure your app.
+                  <Link
+                    className="border-b-4 text-xl font-bold border-green-800"
+                    href="/"
+                    title="depart"
+                  >
+                    Départ{" "}
                   </Link>
-                  <Link href="/" title="Typography">
-                    Styles for headings, paragraphs, lists...etc
+                  <Link
+                    className="border-b-4 text-xl font-bold border-green-800"
+                    href="/"
+                    title="liste-voyageurs"
+                  >
+                    Liste des voyegeurs{" "}
                   </Link>
                 </ul>
               </NavigationMenuContent>
@@ -163,7 +173,7 @@ export default function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
+              <Link href="/apropos" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   A propos
                 </NavigationMenuLink>
@@ -219,11 +229,21 @@ export default function Navbar() {
               <hr />
               <SheetDescription>
                 <ul className="uppercase text-lg text-green-950 font-bold flex flex-col gap-7 mt-8">
-                  <li>Accueil</li>
-                  <li>Services</li>
-                  <li>Sama GP</li>
-                  <li>Components</li>
-                  <li>a propos</li>
+                  <li>
+                    <Link href="/">Accueil</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Services</Link>
+                  </li>
+                  <li>
+                    <Link href="/"> Sama GP</Link>
+                  </li>
+                  <li>
+                    <Link href="/"> Components</Link>
+                  </li>
+                  <li>
+                    <Link href="/apropos">a propos</Link>
+                  </li>
                 </ul>
               </SheetDescription>
             </SheetHeader>
