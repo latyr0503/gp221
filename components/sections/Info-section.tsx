@@ -27,7 +27,7 @@ export default function InfoSection() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Doloremque, quis? Quia cupiditate dolorum commodi blanditiis
             laboriosam nisi eligendi et eum architecto quo repellat vero
-            recusandae, itaque voluptas maiores laborum qui.
+            recusandae, itaque voluptas maiores laborum .
           </p>
         </div>
         <div className="bg-green-50 flex justify-center items-center flex-col p-10 text-center hover:bg-green-800 hover:text-white rounded-2xl shadow-lg ">
